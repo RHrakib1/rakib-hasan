@@ -48,3 +48,8 @@ const sonkha = [45, 89, 24, 38, 16, 10]
 
 const totalValue = sonkha.map(number => number - 2)
 console.log('map value is a :', totalValue);
+
+const wordNumber = ['torabi', 'rakib', 'mim', 'siam', 'sin', 'sinan', 'tarin']
+
+const wordValue = wordNumber.map(w => w.length)
+console.log('akhaen pori nam a ai word gula ase :', wordValue);
