@@ -53,3 +53,19 @@ const wordNumber = ['torabi', 'rakib', 'mim', 'siam', 'sin', 'sinan', 'tarin']
 
 const wordValue = wordNumber.map(w => w.length)
 console.log('akhaen pori nam a ai word gula ase :', wordValue);
+
+const firstword = wordNumber.map(word => word[0]);
+console.log('first word is  a :', firstword);
+
+
+// scope
+
+let a = 40;
+
+function valueData(x) {
+    x = 50;
+    console.log('fuction er vitor er man', x);
+}
+
+valueData(a);
+console.log('ai data fuction er bahir er ', a);
