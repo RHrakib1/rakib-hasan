@@ -13,6 +13,7 @@ const display = (users) => {
         const postcard = document.createElement("div");
 
         postcard.innerHTML = `
+        
         <div class="post-card">
             <h2>${user.name}</h2>
             <div class="username">@${user.username}</div>
@@ -29,3 +30,4 @@ const display = (users) => {
         postcontainer.append(postcard);
     });
 }
+dataloadwebsite()
