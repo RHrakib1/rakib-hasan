@@ -5,20 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <script src="inportData.js"></script>
+
     <style>
         .dataBtn {
-            background-color: burlywood;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            font-weight: 700;
-            border-radius: 10px;
-            cursor: pointer;
+            padding: 12px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            background: linear-gradient(135deg, #4f46e5, #3b82f6);
             border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
 
+        .dataBtn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(135deg, #4338ca, #2563eb);
+        }
 
+        .dataBtn:active {
+            transform: scale(0.96);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .dataBtn:focus {
+            outline: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        #post-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .post-card {
+            background: #ffffff;
+            padding: 22px;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid #4f46e5;
+        }
+
+        .post-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .post-card h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #111827;
+        }
+
+        .username {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+
+        .info {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #374151;
+        }
+
+        .company {
+            margin-top: 12px;
+            font-weight: 600;
+            color: #4f46e5;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            #post-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            #post-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -28,6 +110,7 @@
     <div id="post-container">
 
     </div>
+    <script src="inportData.js"></script>
 </body>
 
 </html>
